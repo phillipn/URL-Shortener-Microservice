@@ -1,0 +1,24 @@
+li {
+  font-size: 18px;
+}
+
+img {
+    display: inline-block;
+    height: 100px;
+    width: 240px;
+    float: right;
+}
+
+h1 {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 992px){
+  h1 {
+    font-size: 40px !important;
+  }
+  img {
+    height: 80px;
+    width: 170px;
+  }
+}
