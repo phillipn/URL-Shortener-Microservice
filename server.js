@@ -9,7 +9,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(express.static(__dirname + '/public'));
 
-var myUrl = process.env.MONGOLAB_URI;      
+var myUrl = ENV['MONGOLAB_URI'];      
 
 MongoClient.connect(myUrl, function (err, db) {
   if (err) {
